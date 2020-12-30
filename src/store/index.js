@@ -1,3 +1,4 @@
 import { combineReducers } from "redux"
-const reducer = combineReducers(()=> "hello  world!")
+import fetchNoteReducer from "../Reducers/note"
+const reducer = combineReducers({notes: fetchNoteReducer})
 export default reducer

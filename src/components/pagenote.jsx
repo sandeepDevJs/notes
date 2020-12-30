@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { createNoteAction } from "../Actions/note"
+import NoteCard from "./notecard"
 
 class Pagenote extends React.Component {
     constructor(props){
@@ -52,6 +53,7 @@ class Pagenote extends React.Component {
                             </form>
                         </div>
                     </div>
+                    <NoteCard/>
                 </div>
             </React.Fragment>
         )
